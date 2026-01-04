@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: betting-flash-backend
+    runtime: node
+    region: ohio
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "5000"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SMTP_USER
+        value: bettingflash62@gmail.com
+      - key: SMTP_PASS
+        scope: project
+      - key: ADMIN_EMAIL
+        value: bettingflash62@gmail.com
+      - key: ADMIN_PHONE
+        value: 07071198393
+      - key: API_KEY
+        scope: project
+databases:
+  - name: betting-flash-db
+    databaseName: betting_flash
+    plan: free
+    ipAllowList: []
