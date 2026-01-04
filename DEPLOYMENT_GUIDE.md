@@ -95,7 +95,7 @@ git add .
 git commit -m "Initial Betting Flash deployment"
 
 # Create repo on GitHub, then:
-git remote add origin https://github.com/YOUR_USERNAME/betting-flash.git
+git remote add origin https://github.com/surgeuji/BETTINGFLASH.git
 git branch -M main
 git push -u origin main
 ```
