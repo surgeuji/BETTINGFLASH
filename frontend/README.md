@@ -17,7 +17,8 @@ REACT_APP_API_URL=http://localhost:5000
 ```
 
 ## Pages
-
+'''md
+Deyployment trigger
 - **Register** - User registration (9 fields, optional promo code)
 - **Login** - Email/password login
 - **Home** - Main dashboard
